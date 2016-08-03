@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+      <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement;
+            var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            var recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = (clientWidth/16).toFixed(1) + 'px';
+            };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+        //640px时1rem是40px
+     </script>
+     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+     <link rel="stylesheet" type="text/css" href="css/aboutUs.css"/>
+</head>
+<body>
+  <div class="logo">
+    <a href="#">
+    
+    </a>
+  </div>
+  <div class="main">
+  	<div class="Introduction">
+  	  <p>公司介绍</p>
+  	  <p>Company introduction</p>
+  	</div>
+  	<p class="main-p1">
+          银湖网（yinh.com）是银湖网络科技有限公司旗下的互联网金融平台。
+    </p>
+  	<p class="main-p2">
+  		银湖网络科技有限公司是由熊猫金控（股票代码600599）全资子公司熊猫资本投资设立。注册资本 2 亿元人民币。是行业内唯一一家 100% 上市公司控股的互联网金融平台。银湖网定位不仅是P2P平台，未来还将打造成为互联网金融综合性交易平台，为广大用户提供多元化的金融信息服务和产品。
+  	</p>
+  	<div class="Introduction">
+  	  <p>股东背景</p>
+  	  <p>Shareholder backgrond</p>
+  	</div>
+  	<p class="main-p3">
+  	    熊猫金控（股票代码 600599）, 前身熊猫烟花，于2001年8月28日在上海证券交易所正式挂牌上市。2014年7月熊猫金控推出网贷平台银湖网，打造公司互联网 + 金融业务线上与线下平台的协同效应，更好服务于公司的战略转型需求，并实行多元化发展经营。
+  	</p>
+  </div>
+</body>
+</html>
