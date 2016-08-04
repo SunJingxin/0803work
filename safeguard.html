@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+      <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement;
+            var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            var recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = (clientWidth/16).toFixed(1) + 'px';
+            };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+        //640px时1rem是40px
+     </script>
+     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+     <link rel="stylesheet" type="text/css" href="css/safeguard.css"/>
+</head>
+	<body>
+  <div class="logo">
+    <a href="yinhuHonor.html">
+    </a>
+  </div>
+  <div class="main">
+    <ul class="mainUl">
+      <li class="mainUlLi">
+        <img src="img/safeLogo1.png" >
+      	<p>100%完美兑付</p>
+      	<p>平台自 2014 年 7 月 1 日上线以来，已累计为 66 万人提供金融中介服务，促成 34 亿投资，历史投资100%完美兑付。</p>
+      </li>
+      <li class="mainUlLi">
+      	<img src="img/safeLogo2.png">
+      	<p>透明的信息披露机制</p>
+      	<p>作为熊猫金控股份有限公司&nbsp;(简称熊猫金控，股票代码 600599) 全资子公司，银湖网严格按照《中华人民共和国证券法》要求，配合母公司进行信息披露，每季度、每年的财报信息均会通过母公司季报、年报对外公布。</p>
+      </li>
+      <li class="mainUlLi">
+      	<img src="img/safeLogo3.png">
+      	<p>第三方资金托管</p>
+      	<p>银湖网投资人的投资理财资金由业内领先的第三方支付公司汇付天下进行托管，保证资金流转不经过银湖网的银行账户，避免形成资金池，杜绝了资金被挪用而给交易双方带来的风险。</p>
+      </li>
+      <li class="mainUlLi"> 
+      	<img src="img/safeLogo4.png">
+      	<p>完善的23道风控体系</p>
+      	<p>23 道风控措施覆盖贷前、贷中和贷后全流程，同时银湖网要求合作机构成立专业的线下风控团队，对借款人进行严格、谨慎的当面审核,对借款项目进行全面、专业的实地尽职调查。我们认为只有经过详尽的实地考察，才能最大限度的降低风险。</p>
+        <p>2016 年 3 月银湖网还正式接入由中国支付清算协会负责运维的互联网金融风险信息共享系统。这意味着银湖网除了自身的风控体系外，又增加了一层大数据风控保护。</p>
+      </li>
+      <li class="mainUlLi">
+      	<img src="img/safeLogo5.png">
+      	<p>大数据风险防护</p>
+      	<p>行业领先的技术团队、先进的加密技术、托管于中国电信自运营的IDC机房的服务器是我们实力的保证，ISO27001信息安全体系认证是我们实力的体现，我们会尽最大努力保护投资人和借款人的资金和账户信息安全。</p>
+        <p>此外银湖网会定期对平台数据进行自动备份，并同时将备份数据存储于本地及异地，当平台系统遭受到意外、不可抗力等导致的各种应急事件时也可保证客户数据的安全性和完整性。</p>
+      </li>
+    </ul>
+  </div>
+	</body>
+</html>

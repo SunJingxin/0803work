@@ -12,8 +12,8 @@
   background-image: url(../img/back.png);
   background-size:0.575rem 0.925rem;
   background-repeat: no-repeat;
-  width:1rem;
-  height:1rem;
+  width:1.5rem;
+  height:1.5rem;
 }
 .main{
   width: 16rem;
@@ -22,7 +22,7 @@
 .mainUl{
   margin:0 0.75rem;
   line-height: 1.2rem;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   color: #666666;
   padding-left: 0.975rem;
   padding-bottom:1.35rem; 
@@ -42,12 +42,12 @@
 .mainUlLi{
   margin-bottom: 1.1rem;
   text-align: justify;
-  letter-spacing:0.05rem ;
+  /*letter-spacing:0.05rem ;*/
 }
 .mainUlLi p:nth-of-type(1){
   line-height:1.375rem;
   color: #999999; 
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   position: relative;
 }
 .mainUlLiPSpan{
