@@ -29,4 +29,5 @@ button,input[type="submit"]{
 body{
   font-size:16px;
   font: 15px/1.5 'Helvetica','Microsoft Yahei','arial';
+  background-color:#ffffff;
 }
