@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+      <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement;
+            var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            var recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = (clientWidth/16).toFixed(1) + 'px';
+            };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+        //640px时1rem是40px
+     </script>
+     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+     <!--<link rel="stylesheet" type="text/css" href="css/FAQ.css"/>-->
+     <script src="js/zepto.min.js"></script>
+</head>
+<style type="text/css">
+body{
+background-color: #F5F5F5;	
+}
+.main{
+  width: 16rem;
+  height: 25.2rem;
+  border-top:0.025rem solid #D5D5D5;
+}
+.mainUl{
+  width: 4.35rem;
+  height: 25.2rem;
+  float: left;
+}
+.mainUlLi{
+  border-bottom:0.025rem solid #E2E3E3;  
+  height: 2.475rem;
+  line-height: 2.475rem;
+  text-align: center;
+  color: #666666;
+  position: relative;
+  border-left: 0.15rem solid #F5F5F5;
+  font-size: 0.6rem;
+}
+.cover{
+  position: absolute;
+  top: 0;
+  left: 4.18rem;
+  width: 0.075rem;
+  height: 2.475rem;
+  background-color: red;
+  display: none;
+}
+.clickLi{
+  border-left: 0.15rem solid #FE7740;
+  background-color: #fff;
+  color: #FE7740;
+}
+.clickLi>.cover{
+  display: block;
+  background-color: #fff;
+}
+/*2*/
+.mainR{
+  min-height: 25.2rem;
+  width: 11.525rem;
+  float: left;
+  border-left: 0.025rem solid #E2E3E3;
+  position: relative;
+}
+.mainRight{
+  background-color:#fff;
+  min-height: 2.2rem;
+  position: absolute;
+  width: 11.525rem;
+  top: 0;
+  left: 0;
+}
+.mainRightLi{
+  background-color: #fff;
+  width: 10rem;
+  margin:0 auto;
+  border-bottom:0.025rem dashed #E2E3E3 ;
+}
+.mainRightLi:last-child{
+  border: none;
+}
+.mainRightLiP1{
+  color: #333333;
+  font-size: 0.7rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+.mainRightLiP1>span{
+  display: block;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  float: left;
+}
+.mainRightLiP1>img{
+  width: 0.4rem;
+  height: 0.725rem;
+  display: block;
+  float: right;
+  margin-top:0.887rem ;
+  transition: all .1s;
+}
+.mainRightLiP2{
+  color: #666666;
+  font-size: 0.6rem;
+  line-height: 1rem;
+  padding-bottom: 0.75rem;
+  display: none;
+}
+.mainRightLiP21{
+  display: block;
+}
+.mainRightLiImg{	
+  transform: rotate(90deg);
+}
+
+</style>
+	<body>
+	  <div class="main">
+	    <ul class="mainUl">
+	      <li class="mainUlLi">
+	      	<div class="cover"></div>
+            <span>注册与登录</span>          
+          </li>
+	      <li class="mainUlLi">
+	      	<div class="cover"></div>
+            <span>账户与安全</span>        
+          </li>
+	      <li class="mainUlLi clickLi">
+	      	<div class="cover"></div>
+            <span>充值与提现 </span>
+          </li>
+	      <li class="mainUlLi">
+	      	<div class="cover"></div>
+            <span>投资与收益</span>
+          </li>
+	      <li class="mainUlLi">
+	       <div class="cover"></div>
+	       <span>借款与还款</span>
+          </li>
+	      <li class="mainUlLi">
+	      	<div class="cover"></div>
+            <span>生力宝介绍</span>
+          </li>
+	    </ul>
+	    <!--2-->
+	   <div class="mainR">
+	    <ul class="mainRight">
+	      <li class="mainRightLi">      	
+	      	<p class="mainRightLiP1">
+            <span>
+                                 如何往账户里面打钱
+            </span>
+            <img src="img/arrows1.png"/>
+	      	</p>
+	      	<p class="mainRightLiP2">
+	      	  银湖网投资人的投资理财资金由业内领先的第三方支付公司汇付天下进行托管，保证资金流转不经过银湖网的银行账户，避免形成资金池，杜绝了资金被挪用而给交易双方带来的风险
+	      	</p>
+	      </li>
+	      <li class="mainRightLi">
+	      	<p class="mainRightLiP1">
+	      	 <span>
+                                    如何往账户里面打钱
+            </span>
+            <img src="img/arrows1.png"/>
+	      	</p>
+	      	<p class="mainRightLiP2">
+	      	  银湖网投资人的投资理财资金由业内领先的第三方支付公司汇付天下进行托管，保证资金流转不经过银湖网的银行账户，避免形成资金池，杜绝了资金被挪用而给交易双方带来的风险
+	      	</p>
+	      </li>
+	      <li class="mainRightLi">
+	      	<p class="mainRightLiP1">
+	      	  <span>
+                                    如何往账户里面打钱
+              </span>
+              <img src="img/arrows1.png"/>
+	      	</p>	
+	      	<p class="mainRightLiP2">
+	      	  银湖网投资人的投资理财资金由业内领先的第三方支付公司汇付天下进行托管，保证资金流转不经过银湖网的银行账户，避免形成资金池，杜绝了资金被挪用而给交易双方带来的风险
+	      	</p>
+	      </li>
+	      <li class="mainRightLi">
+	      	<p class="mainRightLiP1">
+	      	  <span>
+                                     如何往账户里面打钱
+              </span>
+              <img src="img/arrows1.png"/>
+	      	</p>	
+	      	<p class="mainRightLiP2">
+	      	  银湖网投资人的投资理财资金由业内领先的第三方支付公司汇付天下进行托管，保证资金流转不经过银湖网的银行账户，避免形成资金池，杜绝了资金被挪用而给交易双方带来的风险
+	      	</p>
+	      </li>	      
+	    </ul> 
+	   </div>
+	  </div>	
+    <script>
+      $(".mainUl")[0].addEventListener("click",function(e){     	
+      	// clear before style
+      	$(".mainUlLi").each(function(ind,ele){
+   	     	ele.className="mainUlLi";
+      	})
+      	//affirm li
+      	var oli1=$(e.target).parent()[0].className;
+      	var oli2=$(e.target).parent().parent()[0].className;
+        if(oli1=="mainUl"){
+         var oli=e.target;
+        }else if(oli2=="mainUl"){
+          var oli=$(e.target).parent()[0]
+        }    
+        //add style
+      	$(oli).addClass("clickLi");
+      	//child option
+      	$(".mainUlLi").each(function(ind,ele){
+      	  if(ele.classList.length==2){
+      		console.log(ind)
+      	  }
+      	})
+      },false)
+      //click children menu
+      $(".mainRightLi").click(function(e){
+      	var oP=e.target;
+      	if(oP.className!="mainRightLiP1"){
+      	  oP=$(e.target).parent()[0];
+      	}
+      	//realize stretch and shrink
+      	$($(oP).parent().children()[1]).toggleClass("mainRightLiP21");
+        //realize img rotate
+        console.log($(oP).parent().children()[1])
+        if($(oP).parent().children()[1]){
+          console.log("0000")
+          $($(oP).children()[1]).toggleClass("mainRightLiImg") 
+        }     
+      })
+    </script>
+	</body>
+</html>

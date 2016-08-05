@@ -1,19 +1,10 @@
 .logo{
   width: 16.0rem;
-  height: 10.0rem;
+  height: 7.95rem;
   margin-bottom: 1rem;
   background-image: url(../img/aboutUs.png);
-  background-size:16.0rem 10.0rem ;
+  background-size:16.0rem 7.95rem;
   overflow: hidden;
-}
-.logo a{
-  display: block;
-  margin: 1.625rem 0 0 0.475rem;
-  background-image: url(../img/back.png);
-  background-size:0.575rem 0.925rem;
-  background-repeat: no-repeat;
-  width:1.5rem;
-  height:1.5rem;
 }
 .main{
   margin:0 0.75rem;
